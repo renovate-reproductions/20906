@@ -17,6 +17,19 @@
       ],
       "automerge": true,
       "automergeType": "branch"
+    },
+    {
+      "matchManagers": [
+        "dockerfile"
+      ],
+      "postUpgradeTasks": {
+        "commands": [
+          "./bump.sh"
+        ],
+        "fileFilters": [
+          "**/**"
+        ]
+      }
     }
   ]
 }
