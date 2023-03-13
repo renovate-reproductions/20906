@@ -1,0 +1,22 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":disableVulnerabilityAlerts"
+  ],
+  "repositories": [
+    "thejan2009/renovate-automerge"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
+      "automerge": true,
+      "automergeType": "branch"
+    }
+  ]
+}
